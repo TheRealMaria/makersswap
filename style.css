@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {box-sizing: border-box;}
+.main {
+  flex: 80%;
+  margin: auto;
+  padding: 0px 0px 0px 300px;
+  position: relative;
+  border: 2px green;
+  z-index: -1;
+  
+}
+.mainimg {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  position: relative;
+}
+
+.mainimgside {
+  width: 50%;
+height:auto;
+flex: 50%;
+}
+
+.sidebar {
+  flex: 20%;
+  width: 200px;
+  margin: 50px;
+  padding: 10px 60px 10px 0px;
+  border: 2px solid black;
+  position: fixed;
+  z-index: 100;
+}
+.yellow{
+  background-color: #F3E672;
+  border: #F3E672;
+  display: flex;
+  position: relative;
+  
+}
+.sidebyside {
+ display: flex;
+margin: auto;
+}
+.yellowside { 
+  background-color: #F3E672;
+  border: #F3E672;
+  width: 50%;
+  height: auto;
+
+
+}
+.yellowimg{
+  display: flex;
+  padding: 30px;
+  width: 30%; 
+  height: 30%;
+}
+.yellowtype {
+  display: flex;
+  padding: 40px 0px 0px 40px;
+  width: 80%; 
+  height: auto;
+}
+.parent {
+  display: flex;
+  border: 2px green;
+  margin: auto;
+  padding: 50px
+}
+.menuhover:hover {
+  border:1px solid red;
+}
+a.menuhover{display:inline-block;}
+.logosidebar {
+  display: flex;
+  width:100px;
+  transition: transform .2s;
+  transform-origin: left;
+  
+}
+
+.logosidebar:hover {
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); 
+}
+
+.logo{
+  display: flex;
+  width: 90%;
+  height: 90%;
+  flex: 30%;
+}
+
+body{ 
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: -0.06em;
+text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+body {
+  background-color: lightgreen;
+  }
+.yellow {
+  flex-direction: column;
+}
+.sidebar {
+   flex-direction: column;
+   position: relative;
+   display: flex;
+   flex: 100%;
+  border: 2px solid black;
+  z-index: 100;
+  float: none;
+  width: 25%;
+}
+.main{
+  padding: 0px
+}
+.parent {
+  flex-direction: column;
+}
+}
