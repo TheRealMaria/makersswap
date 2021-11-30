@@ -129,4 +129,7 @@ body {
 .parent {
   flex-direction: column;
 }
+.yellowimg{
+  width: 100%;
+  height:auto ;
 }
