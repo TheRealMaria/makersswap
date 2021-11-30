@@ -27,6 +27,7 @@ flex: 50%;
 
 .sidebar {
   flex: 20%;
+  flex-direction:column;
   width: 200px;
   margin: 50px;
   padding: 10px 60px 10px 0px;
@@ -105,8 +106,19 @@ line-height: 19px;
 letter-spacing: -0.06em;
 text-align: left;
 }
-
+.mobile-menu {
+  display:none;
+}
+.sidebar {
+  display:flex;
+}
 @media screen and (max-width: 768px) {
+  .mobile-menu {
+  display:block;
+}
+.sidebar {
+  display:none;
+}
 body {
   background-color: lightgreen;
   }
@@ -116,20 +128,33 @@ body {
 .sidebar {
    flex-direction: column;
    position: relative;
-   display: flex;
+   display: none;
    flex: 100%;
   border: 2px solid black;
   z-index: 100;
   float: none;
   width: 25%;
 }
+.logosidebar {
+  width:100%;
+}
 .main{
-  padding: 0px
+  padding: 0px;
 }
 .parent {
   flex-direction: column;
 }
 .yellowimg{
   width: 100%;
-  height:auto ;
+  height:auto;
+  }
+  
+  .dropdown {
+    display:none;
+  }
+  .active {
+    display: flex;
+    flex-direction:column;
+  }
+  .logosidebar:hover {transform: scale(1);}
 }
